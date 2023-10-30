@@ -1,0 +1,10 @@
+service: "service.py:service"
+labels:
+   owner: bentoml-ace-team
+   project: iris
+include:
+- "*.py"
+python:
+    packages:
+      - scikit-learn
+      - pandas
