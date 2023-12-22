@@ -12,5 +12,5 @@ Y = iris.target
 
 model.fit(X , Y)
 
-bentoml_model = bentoml.sklearn.save_model('KNeighbors',  model)
+bentoml_model = bentoml.sklearn.save_model('iris-demo',  model)
 print(f"Model Saved: { bentoml_model }")

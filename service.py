@@ -2,9 +2,9 @@ import bentoml
 import numpy as np
 from bentoml.io import NumpyNdarray
 
-clf = bentoml.sklearn.get("kneighbors:latest").to_runner()
+clf = bentoml.sklearn.get("iris-demo:latest").to_runner()
 
-service = bentoml.Service("kneighbors", runners=[clf])
+service = bentoml.Service("iris-demo", runners=[clf])
 
 # create an API Function
 @service.api(input=NumpyNdarray(), output = NumpyNdarray())

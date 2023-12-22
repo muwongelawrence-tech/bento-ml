@@ -1,3 +1,4 @@
+name: iris
 service: "service.py:service"
 labels:
    owner: bentoml-ace-team

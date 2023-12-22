@@ -1,6 +1,6 @@
 import bentoml
 
-clf = bentoml.sklearn.get("kneighbors:latest").to_runner()
+clf = bentoml.sklearn.get("iris-demo:latest").to_runner()
 
 clf.init_local()
 
